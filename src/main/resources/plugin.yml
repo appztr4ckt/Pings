@@ -1,0 +1,9 @@
+name: Pings
+version: '${project.version}'
+main: me.appztr4ckt.pings.Pings
+author: Appztr4ckt
+commands:
+  pings:
+    description: Reloads the plugin configuration.
+    usage: /pings reload
+    permission: pings.reload

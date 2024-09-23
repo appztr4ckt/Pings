@@ -1,0 +1,12 @@
+# The text that replaces the player's name in chat. Use %player% to insert the player's name dynamically.
+replacement-text: "&6&l@&f&l%player% &f"
+
+# The sound that plays when a player's name is mentioned in the chat.
+# You can choose any valid Minecraft sound from: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+sound: "BLOCK_NOTE_BLOCK_BELL"
+
+# The volume of the sound (1.0 is the maximum).
+volume: 1.0
+
+# The pitch of the sound (1.0 is normal, lower values make the sound deeper).
+pitch: 0.8
