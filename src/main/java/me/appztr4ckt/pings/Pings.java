@@ -51,12 +51,13 @@ public class Pings extends JavaPlugin implements Listener {
 
         for (Player player : Bukkit.getOnlinePlayers()) {
             if (message.contains(player.getName())) {
-                String newMessage = message.replace(player.getName(), ChatColor.translateAlternateColorCodes('&', replacementText.replace("%player%", player.getName())));
-                event.setMessage(newMessage);
+                message = message.replaceAll("(?i)" + player.getName(), ChatColor.translateAlternateColorCodes('&', replacementText.replace("%player%", player.getName())));
 
                 player.playSound(player.getLocation(), sound, volume, pitch);
             }
         }
+
+        event.setMessage(message);
     }
 
     @Override
